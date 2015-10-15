@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+}
+
+#map-canvas {
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    text-align: left;
+}
+
+.infoTitle{
+    margin: 0px;
+}
+
+.showJobs{
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header {
+    background: #232323;
+}
+
+.centered {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.header nav {
+    float: right;
+}
+
+.header nav a {
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    padding: 35px 25px;
+    color: #FFF;
+    text-decoration: none;
+    -moz-transition: background 0.1s ease-out;
+    -o-transition: background 0.1s ease-out;
+    -webkit-transition: background 0.1s ease-out;
+    transition: background 0.1s ease-out;
+}
+
+.header nav a:hover,
+header nav a.hover {
+    background: #444444;
+}
+
+.header nav li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header .menuIconHolder a{
+    text-decoration: none;
+}
+.header .menuIconHolder {
+    display: none;
+}
+
+.header .logo {
+    display: inline-block;
+    float: left;
+    margin: 20px;
+    position: relative;
+}
+
+.header .logo img {
+    -moz-transition: width 0.1s ease-out;
+    -o-transition: width 0.1s ease-out;
+    -webkit-transition: width 0.1s ease-out;
+    transition: width 0.1s ease-out;
+    width: 190px;
+}
+
+.job-table{
+    display: none;
+    width: 95%;
+    margin: 30px auto;
+    border-radius: 4px;
+    border: #999999 1px solid;
+}
+.job-row:nth-of-type(1n+2){
+    border-top: #999999 1px solid;
+    padding: 0px;
+    
+}
+
+.job-row{
+    overflow: hidden;
+}
+.job-item{
+    padding: 5px 20px;
+    margin: 0px;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+}
+
+.job-item h1{
+    margin: 0px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.87);
+}
+.job-item p{
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+}
+.job-item:nth-of-type(1){
+    width: 40%;
+}
+.job-item:nth-of-type(2){
+    width: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .header .logo {
+        margin: 0px;
+    }
+
+    .header .menuIconHolder {
+        display: inline-block;
+        background: #FF3333;
+        border: 1px #FF6666 solid;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header .menuIconHolder:hover {
+        background: #FF6666;
+    }
+    
+    .header .menuIconHolder a {
+        width: 100%;
+        display: inline-block;
+        font-size: 1.125em;
+        padding: 15px 0;
+        line-height: 1.125em;
+        color: #fff;
+    }
+    
+    .header .menuIconHolder a img {
+        vertical-align: middle;
+        margin-top: -4px;
+        padding-right: 4px;
+    }
+    
+    .header .logo {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        padding-left: 0;
+    }
+    
+    .header .menu {
+        max-height: 0;
+        overflow: hidden;
+        -moz-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
+        -webkit-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+        float: none;
+        clear: left;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .header .menu.menuOpen {
+        max-height: 1000px;
+        -moz-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
+        -webkit-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+    }
+    
+    .header .menu ul li {
+        display: block;
+        width: 100%;
+        background: #2e2e2e;
+        border-top: #4d4d4d 1px solid;
+    }
+   
+    
+    .header .menu ul li a {
+        color: #fff;
+        text-shadow: #848484 0px 1px 2px;
+        padding: 10px 0;
+        width: 100%;
+        display: inline-block;
+    }
+    .job-item:nth-of-type(1){
+        width: 100%;
+    }
+    .job-item:nth-of-type(2){
+        float: left;
+    }
+    .job-item:nth-of-type(3){
+        float: right;
+    }
+    
+}

@@ -1,0 +1,26 @@
+<template name="search">
+        
+  <h1>Search Job</h1>
+
+    <div id="map">
+      <div id="map-canvas"></div>
+    </div>
+
+
+  <div class="job-list">
+     <div class='job-table'>
+        {{#each jobs}}
+             {{> jobItem}}
+        {{/each}}
+     </div>
+  </div> 
+
+</template>
+
+<template name="jobItem">
+  <div class="job-row">
+    <div class="job-item"><h1> {{title}} </h1><BR><p>{{poster}} </p></div>
+    <div class="job-item"><p> Hourly: ${{rate}} </p></div>
+    <div class="job-item"><p> Location: {{city}} {{state}}</p></div>
+  </div>
+</template>

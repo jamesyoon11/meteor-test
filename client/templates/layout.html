@@ -1,0 +1,42 @@
+
+
+
+<template name="layout">
+	<header class="header clearfix">
+		<div class="center">
+			<div class="logo">
+				<a href="/">
+					<img src="images/workpop-logo-white-2x.png">
+				</a>
+			</div>
+			<div class="menuIconHolder">
+				<a class="menuExpander" href="#menuExpand">
+					<span class="icon icon-menu">&nbsp;</span> 
+					&#9776; Menu
+				</a>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/search">Search</a>
+					</li>
+					<li>
+						<a href="/about">About</a>
+					</li>
+					<li>
+						<a href="/contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+
+	<div class="container">
+		<main>
+			{{> yield}}
+		</main>
+	</div>
+</template>
